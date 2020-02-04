@@ -1,0 +1,24 @@
+дек 14, 2016 8:34:54 PM model.UseDB createDB
+SEVERE: Exception: 
+java.sql.SQLException: path to 'KursValut/Users.sqlite': '/home/oleg/workspace/KursValut/KursValut' does not exist
+	at org.sqlite.core.CoreConnection.open(CoreConnection.java:192)
+	at org.sqlite.core.CoreConnection.<init>(CoreConnection.java:76)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:24)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:24)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:45)
+	at org.sqlite.JDBC.createConnection(JDBC.java:114)
+	at org.sqlite.JDBC.connect(JDBC.java:88)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at model.UseDB.createDB(UseDB.java:16)
+	at application.Main.start(Main.java:23)
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$162(LauncherImpl.java:863)
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$175(PlatformImpl.java:326)
+	at com.sun.javafx.application.PlatformImpl.lambda$null$173(PlatformImpl.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$174(PlatformImpl.java:294)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$49(GtkApplication.java:139)
+	at java.lang.Thread.run(Thread.java:745)
+
